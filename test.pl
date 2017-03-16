@@ -6,13 +6,8 @@ use strict;
 use warnings;
 
 use Exception;
-#use Serializer;
 use LogWrapper;
-#$SIG{__WARN__} = sub { warn sprintf("[%s] ", scalar localtime), Serializer->serialize(@_) };
-#$SIG{__DIE__}  = sub { die  sprintf("[%s] ", scalar localtime), Serializer->serialize(@_) };
 
-#warn;
-#die;
 
 sub A { &D; }
 sub D { &E; }
