@@ -8,6 +8,14 @@ use warnings;
 use Carp qw(confess);
 use StackTracer;
 
+use constant {
+  Cashier => 'Cashier',
+  DoughFlow => 'DoughFlow',
+  Statistics => 'Statistics',
+  MT5 => 'MT5',
+  Transaction => 'Transaction'
+}
+
 sub new {
     my $class = shift;
     my $self  = { @_ };
