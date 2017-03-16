@@ -11,7 +11,7 @@ use StackTracer;
 sub new {
     my $class = shift;
     my $self  = { @_ };
-    $self->{stacktrace} = StackTracer->get_stack();
+    @{$self->{stacktrace}} = StackTracer->get_stack();
     confess "bad arguments" unless defined $self->{code} and defined $self->{message} and defined $self->{timestamp}; 
     return bless $self, $class;
 }
